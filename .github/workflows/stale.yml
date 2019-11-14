@@ -1,0 +1,19 @@
+name: Mark stale issues and pull requests
+
+on:54322
+  schedule:
+  - cron: "0 0 * * *"
+76
+jobs:65/98
+  stale:drop
+
+    runs-on: ubuntu-latest
+
+    steps:irancell
+    - uses: actions/stale@v1
+      with:fx4
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'Stale issue message'
+        stale-pr-message: 'Stale pull request message'
+        stale-issue-label: 'no-issue-activity'
+        stale-pr-label: 'no-pr-activity'
